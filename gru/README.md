@@ -2,7 +2,7 @@
 The following is an overview of the installation for the gru computer.
 
 1. First, setup the `dave` initial minion computer following the **/minions/00-all/README.md** instructions up to the step where you've copied the first image to your computer's hard drive
-2. Insert the USB-based drive into your computer and format it using the FAT partitioning type, giving it the volume name `USB` and otherwise accepting the defaults, ejecting it when you are finished.  This will be a shared file system among all the minions and `gru` and will be available remotely to your computer as well.
+2. Insert the USB-based drive into your computer and format it using the FAT partitioning type, giving it the volume name `USB` and otherwise accepting the defaults, ejecting it when you are finished.  This will be a shared file system among all the minions and `gru` and will be available remotely to your computer as well.  Note: This should not be an external USB-based hard drive but a standard USB (SanDisk/Thumbdrive) style of drive.  The USB hub as specified will not power both the Raspberry Pi 3 and an external drive because of limited current.
 3. Next, format another micro-SD for the master computer `gru` and copy your image to this card
 	4. In-place, edit the **/etc/hostname** file to name it `gru`
 	5. In-place, edit the **/etc/hosts** file to name it `gru`
