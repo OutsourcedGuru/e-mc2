@@ -1,6 +1,8 @@
 # Installation for all minions
 The following is an overview of the installation for all minion computers.
 
+Note that there is a **minions/01-dave/README.md** file which goes through a step-by-step approach for this first minion.
+
 1. In a computer/workstation, **setup the first micro-SD minion card** using a USB-based adapter
 	2. Format the micro-SD card per the [online instructions](https://www.raspberrypi.org/documentation/installation/noobs.md)
 	3. Download and install the full NOOBS installation software onto the micro-SD card

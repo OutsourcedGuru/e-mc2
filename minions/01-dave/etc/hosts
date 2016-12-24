@@ -1,0 +1,36 @@
+127.0.0.1	localhost
+::1		localhost ip6-localhost ip6-loopback
+ff02::1		ip6-allnodes
+ff02::2		ip6-allrouters
+
+127.0.1.1	dave
+10.1.1.1	gru
+10.1.1.2	dave
+10.1.1.3	kevin
+10.1.1.4	bob
+10.1.1.5	stuart
+10.1.1.6	jerry
+10.1.1.7	jorge
+10.1.1.8	jon
+10.1.1.9	carl
+10.1.1.10	mel
+10.1.1.11	phil
+10.1.1.12	mike
+10.1.1.13	tom
+10.1.1.15	norbert
+10.1.1.16	tim
+10.1.1.17	mark
+10.1.1.18	tony
+10.1.1.19	lance
+10.1.1.20	ken
+10.1.1.21	chris
+10.1.1.22	eric
+10.1.1.23	donnie
+10.1.1.24	john
+10.1.1.25	henry
+10.1.1.26	josh
+10.1.1.27	steve
+10.1.1.28	paul
+10.1.1.29	larry
+10.1.1.30	darwin
+10.1.1.254	gateway
