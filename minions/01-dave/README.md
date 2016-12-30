@@ -57,29 +57,29 @@ When this process has completed, make sure that you properly **Eject** the drive
 And in some cases, it may be necessary to first unzip the files and then move them over a few at a time.
 
 ## Now, let's use dave
-Next, we'll need to make some connections for our first minion whose name is `dave` in your system. If you've not already done so, unbox a Raspberry Pi 3.
+Next, we'll need to make some connections for our first minion whose name is `dave` in your system. If you've not already done so, unbox a **Raspberry Pi 3**.
 
 ### Parts list
 Check to see if you have the following available before continuing:
 
-1. One Raspberry Pi 3 (Model B, 1GB RAM)
+1. One **Raspberry Pi 3** (Model B, 1GB RAM)
 2. One 5V micro-USB power adapter
 3. A USB-based keyboard
 4. A USB-based mouse
 5. An existing wi-fi network and you should know the name (SSID) and the password to connect to it
 6. An existing Ethernet hub, say, on your wi-fi router or your cable modem itself
-7. An Ethernet cable long enough to get from that hub to your Raspberry Pi 3
+7. An Ethernet cable long enough to get from that hub to your **Raspberry Pi 3**
 8. An HDMI-to-DVI or HDMI-to-VGA cable
 9. A monitor which accepts either DVI or VGA, depending upon that cable type
 8. The first micro-SD card labeled `dave` that you just setup
 
 If you have all these things then here are the connections to be made.
 
-1. Remove the micro-SD card from the SD adapter and install it on the underside of the Raspberry Pi 3 on the end opposite the USB connections.
+1. Remove the micro-SD card from the SD adapter and install it on the underside of the **Raspberry Pi 3** on the end opposite the USB connections.
 2. Plug in the USB keyboard and mouse
 3. Plug in your HDMI cable and connect that to your monitor, turning the monitor ON
-4. Plug the Ethernet cable into your Raspberry Pi 3 and into your Ethernet hub
-5. Plug the power adapter into an outlet and into the Raspberry Pi's micro-USB slot on the side to power it ON for the first time
+4. Plug the Ethernet cable into your **Raspberry Pi 3** and into your Ethernet hub
+5. Plug the power adapter into an outlet and into the Pi's micro-USB slot on the side to power it ON for the first time
 
 ## Your first boot to the NOOBS installer
 As `dave` boots up, you should see status on your monitor to include a Raspberry logo.
@@ -149,7 +149,7 @@ This can be a bit tricky, but follow along and you should be fine.
 ## Your third boot into Raspbian
 We now want to remove the Ethernet adapter out of the picture and verify that we can talk to the computer with only wi-fi.
 
-From the Raspberry nenu, choose `Shutdown...`, `Shutdown`.  Disconnect the Ethernet.  Unplug and then re-plug the power adapter connection.
+From the **Raspberry** nenu, choose `Shutdown...`, `Shutdown`.  Disconnect the Ethernet.  Unplug and then re-plug the power adapter connection.
 
 Again, it should boot back into the system automatically.  Hover over the top status bar ("LX Panel") item that looks like two sliders with two red x's.  It should indicate that "wlan0 is not associated" which is to be expected.
 
