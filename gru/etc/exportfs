@@ -1,1 +1,1 @@
-/media/pi/USB/share HadoopSlave01(rw,fsid=0,insecure,no_subtree_check,async) HadoopSlave02(rw,fsid=0,insecure,no_subtree_check,async) HadoopSlave03(rw,fsid=0,insecure,no_subtree_check,async)
+/srv/share 10.1.1.0/255.255.255.0(rw,fsid=0,insecure,no_subtree_check,async)
