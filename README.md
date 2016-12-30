@@ -1,5 +1,6 @@
 # e=mc2
 ![gru-and-minions](https://cloud.githubusercontent.com/assets/15971213/21572675/a89f9b02-ce90-11e6-8bd3-a8a401a138c0.jpg)
+
 An **Expandable Minion Cube Cluster** is a modular supercomputer squad of **Raspberry Pi 3** single-board computers, sometimes called a "bramble".  The intent would be to extend additional **E=MC<sup>2</sup>**'s by adding more and ganging them together via an external Ethernet switch.
 
 ![e-mc2](https://cloud.githubusercontent.com/assets/15971213/21573476/a4d8f834-ce99-11e6-9f22-037fb59d4d8b.png)

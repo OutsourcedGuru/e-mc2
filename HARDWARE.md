@@ -1,6 +1,7 @@
 # e=mc2
 An **Expandable Minion Cube Cluster** is a modular supercomputer squad of Raspberry Pi 3 single-board computers, also known as a bramble.
 
+## Parts List
 This open-source project includes the hardware specifications, price list and eventually, the 3D printing files for the container to hold the project in its entirety.
 
 <table>
@@ -182,11 +183,28 @@ This open-source project includes the hardware specifications, price list and ev
 		</td>
 	</tr>
 	<tr>
+		<td>
+			Kingston DataTraveler DT-SE9 8GB USB thumbdrive<sup>1</sup>
+		</td>
+		<td>
+			P/N DTSE9H/8GBZ
+		</td>
+		<td align="right">
+			$6.99
+		</td>
+		<td>
+			1
+		</td>
+		<td align="right">
+			$6.99
+		</td>
+	</tr>	
+	<tr>
 		<td colspan="4" align="right">
 			(Before-tax) Total:
 		</td>
 		<td align="right">
-			$239.06
+			$246.07
 		</td>
 	</tr>
 </table>
@@ -198,7 +216,12 @@ Notes:  You might find it easier to just make a 5V USB-based power cable for the
 
 In this case, you won't have to purchase or source the 3-foot version in the table above.
 
-### Product photos and links
+## Product photos and links
+![e14-640522710850](https://cloud.githubusercontent.com/assets/15971213/21297499/649fb63e-c536-11e6-81e5-8505fdf11cba.jpg)
+
+[Raspberry Pi 3, Model B, 1GB RAM](https://www.element14.com/community/community/raspberry-pi "See product specification") (the squad of computers)
+&nbsp;
+---
 
 ![rs-2731106](https://cloud.githubusercontent.com/assets/15971213/21297429/ceab346a-c534-11e6-8065-cce4ea1b0ef9.jpg)
 
@@ -206,11 +229,6 @@ In this case, you won't have to purchase or source the 3-foot version in the tab
 &nbsp;
 ---
 
-![e14-640522710850](https://cloud.githubusercontent.com/assets/15971213/21297499/649fb63e-c536-11e6-81e5-8505fdf11cba.jpg)
-
-[Raspberry Pi 3, Model B, 1GB RAM](https://www.element14.com/community/community/raspberry-pi "See product specification") (the squad of computers)
-&nbsp;
----
 ![ts-4047999330332](https://cloud.githubusercontent.com/assets/15971213/21297610/e74e9266-c537-11e6-8979-0ecf5752736f.jpg)
 
 [Toshiba 16GB Micro SDHC Class 10 40MB/s](https://www.amazon.com/Toshiba-16GB-Micro-Class-PFM016U-2DCK/dp/B00TQFMNH8/ref=sm_n_se_dkp_US_pr_sea_0_1?sigts=1482104027468&sig=ae413e3fffd7e984d59c8fc4810700ce8f7203cf&adId=B00TQFMNH8&creativeASIN=B00TQFMNH8&linkId=09f626b47bd3a32fe7612105ff0189a2&tag=chaseraff-20&linkCode=w42&ref-refURL=http%3A%2F%2Fwww.cochaser.com%2Freview-300%2FToshiba-Microsdhc-High%2F16gb-Toshiba-Microsdhc-High-speed%2F&slotNum=0&imprToken=ppcBRV--wHVZRPIvG00npQ "See product specification") (one per computer to store the operating system)
@@ -219,7 +237,7 @@ In this case, you won't have to purchase or source the 3-foot version in the tab
 
 ![sh-813020018494](https://cloud.githubusercontent.com/assets/15971213/21297718/85008612-c539-11e6-8bee-2ebb9ff7d7c7.jpg)
 
-[Shaxon 1' Grey Cat6 Patch Cable](http://www.frys.com/product/8781831;jsessionid=sM0yA4ytd3r5QfuFoF3rHg__.node1?site=sr:SEARCH:MAIN_RSLT_PG "See product specification") (for each of the four computers plus one internal connection to the plate)
+[Shaxon 1' Grey Cat6 Patch Cable](http://www.frys.com/product/8781831;jsessionid=sM0yA4ytd3r5QfuFoF3rHg__.node1?site=sr:SEARCH:MAIN_RSLT_PG "See product specification") (for each of the four computers plus one internal connection to the plate... plus one more for your workstation if you don't otherwise have any of these lying around)
 &nbsp;
 ---
 
@@ -241,6 +259,12 @@ In this case, you won't have to purchase or source the 3-foot version in the tab
 &nbsp;
 ---
 
+![dtse9h-8gbz](https://cloud.githubusercontent.com/assets/15971213/21574333/04570d58-cea6-11e6-83b6-415bc3af152f.jpg)
+
+[Kingston DataTraveler DT-SE9 8GB USB thumbdrive](http://www.monoprice.com/Product?p_id=18939&gclid=CPPN9cKKndECFQuAfgod_H4BxQ "See product specification") (as a program/data commonly-shared area)
+&nbsp;
+---
+
 ![sh-813020011815](https://cloud.githubusercontent.com/assets/15971213/21298086/4d6b40be-c540-11e6-8d01-24e093b428c2.jpg)
 
 [Shaxon Pass-Through Voice/Cat3 Keystone Jack](http://www.frys.com/product/6301691 "See product specification") (for connecting externally)
@@ -249,6 +273,6 @@ In this case, you won't have to purchase or source the 3-foot version in the tab
 
 ![sh-813020011662](https://cloud.githubusercontent.com/assets/15971213/21298124/0784a5f8-c541-11e6-9825-e6b02499e1ad.jpg)
 
-[Shaxon Single Port Keystone Wallplate](http://www.frys.com/product/6301361 "See product specification") (for connecting externally)
+[Shaxon Single Port Keystone Wallplate](http://www.frys.com/product/6301361 "See product specification") (optional, for connecting externally)
 &nbsp;
 ---
