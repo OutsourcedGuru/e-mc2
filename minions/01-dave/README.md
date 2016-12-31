@@ -401,3 +401,31 @@ $ ssh pi@dave-eth.local
 ```
 
 Note that we're using the Ethernet-centric **/etc/hosts** entry that you should have made before during the `gru` setup.  This should test to see if `dave` responds to that `10.1.1.2` IP address.
+
+## Install SMB Client Support
+Now that we've connected again to `dave`, we'll want to persistently map to that share that's on `gru`.
+
+```
+$ sudo apt-get install cifs-utils
+$ sudo mkdir /media/share
+$ sudo curl -o ~/.smbcredentials https://raw.githubusercontent.com/OutsourcedGuru/e-mc2/master/minions/01-dave/.smbcredentials
+$ sudo chmod 600 ~/.smbcredentials
+$ sudo cp /etc/fstab /etc/fstab.save
+$ sudo bash
+#   Note that we are now elevated to the root user and
+#   I'll use the prompt "root@dave:/home/pi#" and you'll
+#   copy/paste everything to the right of that into your
+#   terminal.
+root@dave:/home/pi# echo //gru/share /media/share cifs credentials=/home/pi/.smbcredentials,iocharset=utf8,sec=ntlm 0 0 >> /etc/fstab
+root@dave:/home/pi# exit
+$ sudo mount -a
+$ ls /media/share
+Hello.minions
+$ exit
+```
+
+## For Now, That's It For Dave
+For the other minions `kevin` and `bob`, it's probably the fastest to just clone the original `dave` image, add the `/etc/hostname` and related files, etc, then run the SMB Client Support section above.  If you thought that you had lots more nodes than just two more, it might be easiest then to clone `dave` again and use this as a starting point for the rest.  And yet, each new node will need its own unique `/etc/hostname` and `/etc/hosts` file regardless.
+
+## Next Step, Kevin
+Next, continue with the **minions/02-kevin/README.md** step-by-step instructions from here.

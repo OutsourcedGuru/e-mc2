@@ -80,6 +80,7 @@ $ sudo apt-get install samba samba-common-bin
 # Use Minions as the password next...
 $ sudo smbpasswd -a pi
 $ sudo mkdir /media/pi/USB/share
+$ sudo curl -o /media/pi/USB/share/Hello.minions https://raw.githubusercontent.com/OutsourcedGuru/e-mc2/master/gru/Hello.minions
 $ sudo chmod -R 777 /media/pi/USB/share
 $ sudo chown -R pi:pi /media/pi/USB/share
 $ sudo curl -o /etc/samba/smb.conf https://raw.githubusercontent.com/OutsourcedGuru/e-mc2/master/gru/etc/samba/smb.conf
