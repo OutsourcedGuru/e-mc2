@@ -24,6 +24,13 @@ $ diskutil list
 ```
 As before, open up the **ApplePi-Baker** application.  First select the micro-SD card in the Pi-Crust section.  Find the image file you created before, leaving the check in the box next to **Auto eject after successful restore**.  Select the `Restore Backup` button.  This took about twenty-five minutes to restore the `dave.zip` image to the micro-SD in my case.
 
+### First, let's turn off Dave
+Given that you'll be bringing up `kevin` in a few moments but he thinks he's `dave` (temporarily), it's a good idea to gracefully shutdown `dave` with:
+
+```
+$ sudo poweroff
+```
+
 Unbox a new **Raspberry Pi 3**, put this micro-SD into it and power it using the new system you've created.
 
 ## First boot to Bob (er, Dave)
@@ -72,6 +79,9 @@ $ exit
 
 ## For Now, That's It For Bob
 It's getting easier since we cloned that original image.
+
+### Don't forget Dave
+Since we temporarily turned off `dave` earlier, don't forget to power him back on.
 
 ## Next Step, Hello World!
 Next, continue with the **demo/01-hello/README.md** step-by-step instructions from here.
