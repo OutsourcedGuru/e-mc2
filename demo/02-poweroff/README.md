@@ -5,7 +5,7 @@ There may be times when you want to remotely shutdown all the minions.
 In order to run remote commands with `ssh` and include the password in the command line, you can install `sshpass` and include it inline.
 
 ```
-$ sudo apt-get install sshpass'
+$ sudo apt-get install sshpass
 ```
 
 ## Remotely shutdown Bob
