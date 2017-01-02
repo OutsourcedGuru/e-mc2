@@ -41,9 +41,13 @@ You'll then clone additional minions from the `dave` image you created earlier, 
 Finally, you would upload code to the `gru\share`, **ssh** to `gru` via wi-fi, change to the shared folder and then initiate a program in parallel, (directing all three minions to do the work), by entering a command like `mpiexec -f minionlistfile -n 3 ./mpi-helloworld`.  This would then choose three available minions from the list and direct them to also run the same program.  The `gru` computer would receive the results of the work and display it on its terminal session.
 
 ## Website
-Once things are working as described above, I hope to then add an HTTP-based interface so that you can go to `http://gru:3000` and initiate jobs, check the status of minions and to shut them down as a collection.
+The design comes with an HTTP-based interface so that you can go to `http://gru:3000` and initiate jobs (future), check the status of minions and to shut them down as a collection.
+
+![website](https://cloud.githubusercontent.com/assets/15971213/21596759/818ee49e-d0f4-11e6-9f9b-2c920954e884.png)
 
 Now that I'm thinking about it, I could probably develop a REST interface to the system via this webserver.
+
+The website work is coming along and the code is now on the repository.
 
 ## Audio
 Since this is a minion-themed project, I intend to add sound events for the dispatching and acknowledgement of work by playing WAV files from the "Despicable Me" movies.  The `gru` computer then would be connected to a speaker and play these events.
