@@ -1,0 +1,26 @@
+//- title, minionCount
+extends layout
+
+block content
+  h2 DESPICABLE
+  h1 ME
+  p.white Move your mouse to see what you can control.
+  p.white e=mc
+    sup 2
+    |  minion count:&nbsp; #{minionCount}
+    | &nbsp;(plus Gru)
+  //----------------------------
+  //- The following is a transparent imagemap which allows
+  //- us to control the location of objects on the underlying
+  //- background graphic itself.
+  //----------------------------
+  img(src="/images/spacer.gif", width="703", height="396", usemap="#controlmap" style="margin-left: -200px; margin-top: -20px;")
+  map(name="controlmap")
+    area(shape="circle", coords="490,125,60", href="/elvis", title="Microphone-looking thing")
+    area(shape="circle", coords="315,195,20", href="/elvis", title="Stuart")
+    area(shape="rect", coords="75,132,125,200", href="/elvis", title="Green radar screen box")
+    area(shape="circle", coords="165,155,20", href="/elvis", title="Blue radar screen left")
+  //----------------------------
+  div.credits
+    p.white
+      a(href="https://github.com/OutsourcedGuru/e-mc2", target="_blank") OutsourcedGuru

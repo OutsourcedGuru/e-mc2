@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  | <script>
+  | document.body.style.backgroundImage = "url('/images/background-404.jpg')";
+  | document.body.style.paddingLeft = "150px";
+  | </script>
+  h2 DESPICABLE
+  h1 ME
+  p.white #{message} - Error #{error.status}
+  p &nbsp;
+  p.white
+    a(href="/") <= Back
+  if (error.status != 404)
+    pre.white #{error.stack}

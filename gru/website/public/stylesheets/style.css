@@ -1,0 +1,46 @@
+body {
+  padding-left: 200px;
+  padding-top: 20px;
+  font-family: 'Anton', sans-serif;
+  font: 12pt 'Anton', 'Lucida Grande', Helvetica, Arial, sans-serif;
+  background-color: black;
+  background-image: url("/images/background.jpg");
+  background-size: 984px 554px;  /* 1406x791 multiplied by 70% */
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #FFFFFF;
+  text-shadow: 3px 3px 3px #000;
+  text-decoration: none;
+}
+
+/* DESPICABLE */
+h2 {
+  color: #f9a350;
+  text-shadow: 3px 3px 3px #54371b;
+}
+/* ME */
+h1 {
+  margin-top: -57px;
+  margin-left: -3px;
+  margin-bottom: -30px;
+  font-size: 75pt;
+  color: #f9a350;
+  text-shadow: 3px 3px 3px #54371b;
+}
+
+.white {
+  color: #FFFFFF;
+  text-shadow: 3px 3px 3px #000;
+}
+
+p {
+  line-height: 10px;
+}
+
+.credits {
+  position: absolute;
+  left: 200px;
+  bottom: 45px;
+}

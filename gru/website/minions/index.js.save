@@ -1,0 +1,51 @@
+'use strict';
+
+var child_process = require('child_process');
+var path = require('path');
+var minions = exports;
+
+minions.checkIfOn = function(minion, callback) {
+  if (typeof callback !== 'function') {
+    callback = function() {};
+  }
+
+
+  // End of checkIfOn()
+}
+
+minions.count = function(callback) {
+  var minionCount = 0;
+  if (typeof callback !== 'function') {
+    callback = function() {};
+  }
+
+  checkIfOn('bob.local', function(errBob, count) {
+    minionCount += count;
+      callback(null, 1);
+    
+  });
+
+  var commands, childD;
+  commands = [ '-c', 1, minion];
+  childD = child_process.spawn('ping', commands);
+  childD.stdin.setEncoding('ascii');
+  childD.stderr.setEncoding('ascii');
+
+  childD.stdout.on('data', function(data) {
+    // PING bob.local (10.20.30.64): 56 data bytes
+    // 64 bytes from 10.20.30.64: icmp_seq=0 ttl=64 time=417.174 ms
+    // --- bob.local ping statistics ---
+    // 1 packets transmitted, 1 packets received, 0.0% packet loss
+    // round-trip min/avg/max/stddev = 417.174/417.174/417.174/0.000 ms
+    console.log('PING output: ' + data);
+  });
+
+  childD.stdout.on('close', function(code) {
+    console.log('PING return: ' + code);
+    if (code !== 0) {
+      callback(null, 1);
+    } else {
+      callback(null, 0);
+    }
+  });
+}
