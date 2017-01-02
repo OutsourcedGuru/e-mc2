@@ -33,7 +33,9 @@ Remote into `gru` and make sure that your speaker is attached.
 ```
 $ mkdir ~/audio
 $ sudo curl -o ~/audio/minions-assemble.wav https://raw.githubusercontent.com/OutsourcedGuru/e-mc2/master/gru/audio/minions-assemble.wav
+$ sudo curl -o ~/audio/gru-okay-bedtime.wav https://raw.githubusercontent.com/OutsourcedGuru/e-mc2/master/gru/audio/gru-okay-bedtime.wav
 $ aplay ~/audio/minions-assemble.wav
+$ aplay ~/audio/gru-okay-bedtime.wav
 ```
 
 ## How I recorded these
