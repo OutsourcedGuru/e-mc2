@@ -6,26 +6,10 @@ If you haven't already done so, follow the instructions for setting up `dave` in
 ## Setup another micro-SD card
 As before, insert another micro-SD card into your workstation.
 
-```
-$ diskutil list
-/dev/disk0 (internal, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *160.0 GB   disk0
-   1:                        EFI EFI                     209.7 MB   disk0s1
-   2:                  Apple_HFS MacOS                   99.3 GB    disk0s2
-   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-   4:                  Apple_HFS Recovery HD             650.0 MB   disk0s4
-   5:           Linux Filesystem                         53.2 GB    disk0s5
-   6:                 Linux Swap                         6.0 GB     disk0s6
-/dev/disk1 (external, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *15.7 GB    disk2
-   1:                 DOS_FAT_32 GRU                     15.7 GB    disk2s1
-```
 As before, open up the **ApplePi-Baker** application.  First select the micro-SD card in the Pi-Crust section.  Find the image file you created before, leaving the check in the box next to **Auto eject after successful restore**.  Select the `Restore Backup` button.  This took about twenty-five minutes to restore the `dave.zip` image to the micro-SD in my case.
 
 ### First, let's turn off Dave
-Given that you'll be bringing up `kevin` in a few moments but he thinks he's `dave` (temporarily), it's a good idea to gracefully shutdown `dave` with:
+Given that you'll be bringing up `bob` in a few moments but he thinks he's `dave` (temporarily), it's a good idea to gracefully shutdown `dave` with:
 
 ```
 $ sudo poweroff
