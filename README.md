@@ -50,7 +50,7 @@ Now that I'm thinking about it, I could probably develop a REST interface to the
 The website work is coming along and the code is now on the repository.
 
 ## Audio
-Since this is a minion-themed project, I intend to add sound events for the dispatching and acknowledgement of work by playing WAV files from the "Despicable Me" movies.  The `gru` computer then would be connected to a speaker and play these events.
+Since this is a minion-themed project, I've added some sound events by playing WAV files from the "Despicable Me" movies.  If the `gru` computer is connected to a speaker when it's originally powered on, it will play these events.
 
 ## Project Scope
 The initial version of the project will be me providing step-by-step instructions for setting all this up from an OS X—based workstation.  I'll be using tools to make this easier like the **ApplePi-Baker** application which does a fine job of cloning micro-SD cards.  I've discovered that cloning a single card would have taken literally hours without software like this.
