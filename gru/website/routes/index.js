@@ -10,6 +10,19 @@ router.get('/', function(req, res, next) {
       res.render('index', { title: 'Gru\'s Lab', minionCount: '?' });
     } else {
       res.render('index', { title: 'Gru\'s Lab', minionCount: minionCount });
+      minions.play('minions-assemble');
+    }
+  });
+});
+
+router.get('/bedtime', function(req, res, next) {
+  minions.play('gru-okay-bedtime');
+  minions.bedtime(function(errCount, minionCount) {
+    if (errCount) {
+      console.log('minions.bedtime() returned with error'); 
+      res.render('bedtime', { title: 'Gru\'s Lab', minionSleepCount: '?' });
+    } else {
+      res.render('bedtime', { title: 'Gru\'s Lab', minionSleepCount: minionCount });
     }
   });
 });

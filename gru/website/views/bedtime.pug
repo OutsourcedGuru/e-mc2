@@ -1,0 +1,18 @@
+//- title, minionSleepCount
+extends layout
+
+block content
+  | <script>
+  | document.body.style.backgroundImage = "url('/images/background-bedtime.png')";
+  | document.body.style.paddingLeft = "420px";
+  | document.body.style.paddingTop = "0px";
+  | document.body.style.marginTop = "0px";
+  | </script>
+  h2 DESPICABLE
+  h1 ME
+  p.white e=mc
+    sup 2
+    |  minions sent to sleep:&nbsp; #{minionSleepCount}
+  div.credits(id="credits", style="left: 420px; top: 520px;")
+    p.white
+      a(href="https://github.com/OutsourcedGuru/e-mc2", target="_blank") OutsourcedGuru
