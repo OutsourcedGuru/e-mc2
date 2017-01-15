@@ -41,6 +41,8 @@ I've now added themed sound events for the home page and the shutdown page.
 ## Shutting down
 And I've added a minion-shutdown routine which seems to work great.
 
+![bedtime](https://cloud.githubusercontent.com/assets/15971213/21960513/0a28f570-daa4-11e6-8371-a58de738223b.png)
+
 ## A work-in-progress
 At the moment, I'm still "mapping out" the client-side `imagemap`, in html terms so there's not much going on yet.
 
