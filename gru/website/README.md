@@ -2,7 +2,7 @@
 Here, we're installing a website on `gru` which ought to allow us to do a variety of tasks like determining minion status, for example.
 
 ## Prerequisites
-You should have setup `dave` and `gru` by now, following the step-by-step instructions in **minions/01-dave/README.md** and **gru/README.md**, respectively.  And they should be assembled in the system, cabled to Ethernet and powered up.
+You should have setup `dave` and `gru` by now, following the step-by-step instructions in **minions/01-dave/README.md** and **gru/README.md**, respectively.  And they should be assembled in the system, cabled to Ethernet and powered up.  Also, you should have gone through **demo/01-hello/README.md**, **demo/02-poweroff/README.md** and **gru/audio/README.md** before continuing here.
 
 ## Installation
 The `git clone` is made interesting below since we're only interested in a single subfolder in the repository.
