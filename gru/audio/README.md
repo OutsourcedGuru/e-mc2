@@ -51,5 +51,7 @@ For those interested, here's how I recorded these sound files on OS X.
 
 After recording a few files, you'll probably want to set your preferences in both iTunes and in System Preferences back to their original settings.
 
-## Now, onto the website
+## Next step, website
 The website that's installed on `gru` will automatically play these sound events if you install them here and if the speaker is plugged in when it is powered on.
+
+Next, continue with the **gru/website/README.md** step-by-step instructions from here.

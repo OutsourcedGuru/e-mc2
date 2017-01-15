@@ -25,5 +25,5 @@ $ sshpass -p 'Minions' ssh pi@bob 'sudo poweroff'
 
 (I tried using an inline `bash` script `for` command but that didn't seem to work out.)
 
-## Next step, website
-Next, continue with the **gru/website/README.md** step-by-step instructions from here.
+## Next step, audio
+Next, continue with the **gru/audio/README.md** step-by-step instructions from here.
