@@ -35,13 +35,17 @@ It's subtle but there are actually some logistics being returned here since the 
 ## About the Website
 The website you see was quickly put together with the [Express Generator](https://www.npmjs.com/package/express-generator), npm, Node.js and a screenshot from the movie's early art design blog and a Google Font which is close enough to the movie poster original.  The remaining work will be done in JavaScript mostly.
 
+## Sound events
+I've now added themed sound events for the home page and the shutdown page.
+
+## Shutting down
+And I've added a minion-shutdown routine which seems to work great.
+
 ## A work-in-progress
 At the moment, I'm still "mapping out" the client-side `imagemap`, in html terms so there's not much going on yet.
 
 ### Next steps
-1. I need to add a JavaScript object to play sound files
-2. I need to decide where on the background map to put various activities
-3. I need to continue to "map out" the index page's `imagemap`
-4. I need to start working on the REST API for controlling minions, for example
-5. I need to incorporate the `poweroff` command into the interface
-6. etc
+1. I need to decide where on the background map to put various activities
+2. I need to continue to "map out" the index page's `imagemap`
+3. I need to start working on the REST API for controlling minions, for example
+4. It would be great to be able to start the `klyng` beacons on `gru` and the minions from this interface as well as turn them off again

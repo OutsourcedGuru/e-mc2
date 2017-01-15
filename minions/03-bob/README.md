@@ -67,5 +67,5 @@ It's getting easier since we cloned that original image.
 ### Don't forget Dave
 Since we temporarily turned off `dave` earlier, don't forget to power him back on.
 
-## Next Step, Hello World!
+## Next step, Hello World!
 Next, continue with the **demo/01-hello/README.md** step-by-step instructions from here.
