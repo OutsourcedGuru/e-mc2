@@ -1,0 +1,20 @@
+//- title, minionBeaconCount, direction
+extends layout
+
+block content
+  | <script>
+  | document.body.style.backgroundImage = "url('/images/background-beacon.png')";
+  | document.body.style.paddingLeft = "240px";
+  | document.body.style.paddingTop = "300px";
+  | document.body.style.marginTop = "0px";
+  | </script>
+  h2 DESPICABLE
+  h1 ME
+  p.white e=mc
+    sup 2
+    |  minions with beacon now #{direction}:&nbsp; #{minionBeaconCount}
+  p.white
+    a(href="/") <- back
+  div.credits(id="credits", style="left: 250px; top: 520px;")
+    p.white
+      a(href="https://github.com/OutsourcedGuru/e-mc2", target="_blank") OutsourcedGuru

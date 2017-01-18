@@ -38,7 +38,7 @@ Next, use the **gru/README.md** step-by-step instructions to setup the `gru` com
 
 You'll then clone additional minions from the `dave` image you created earlier, adding them to the system.  Each minion gets an Ethernet cable and a micro-USB cable to power it.  Although each minion connects to your wi-fi network, most system communications occur via the internal Ethernet switch.  (You could technically have the minions *not* connect to wi-fi however this is useful for later updating all the computers.)
 
-Finally, you would upload code to the `gru\share`, **ssh** to `gru` via wi-fi, change to the shared folder and then initiate a program in parallel, (directing all three minions to do the work), by entering a command like `mpiexec -f minionlistfile -n 3 ./mpi-helloworld`.  This would then choose three available minions from the list and direct them to also run the same program.  The `gru` computer would receive the results of the work and display it on its terminal session.
+Finally, you would upload code to the `gru\share`, **ssh** to `gru` via wi-fi, change to the shared folder and then initiate a program in parallel, (directing all three minions to do the work), by entering a command like `klyng -n 16 hello.js -m minionlistfile`.  This would then choose all available minions from the list and direct them to also run sixteen instances of the same program.  The `gru` computer would receive the results of the work and display it on its terminal session.
 
 ## Website
 The design comes with an HTTP-based interface so that you can go to `http://gru:3000` and initiate jobs (future), check the status of minions and to shut them down as a collection.

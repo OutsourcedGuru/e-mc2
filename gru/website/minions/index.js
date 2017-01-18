@@ -5,6 +5,10 @@ var path = require('path');
 var minions = exports;
 var ping = require('ping');
 
+//-----------------------------------------------
+// play
+//-----------------------------------------------
+
 exports.play = function(wav, callback) {
   if (typeof callback !== 'function') {
     callback = function() {};
@@ -37,6 +41,76 @@ exports.play = function(wav, callback) {
   // End of play()
 }
 
+//-----------------------------------------------
+// beacon
+//-----------------------------------------------
+
+exports.beaconFor = function(minion, isGoingUp, callback) {
+  if (typeof callback !== 'function') {
+    callback = function() {};
+  }
+
+  var commands, childD, userAtHostname, beaconCommand;
+  userAtHostname = 'pi@' + minion;
+  if (isGoingUp) beaconCommand = 'sudo klyng --beacon-up';
+  else           beaconCommand = 'sudo klyng --beacon-down';
+  console.log('klyng beaconCommand: ' + beaconCommand);
+  console.log('klyng userAtHostname: ' + userAtHostname);
+  // sshpass -p 'Minions' ssh pi@dave 'sudo klyng --beacon-up'
+  // sudo klyng --beacon-up
+  if (minion == 'gru') {
+    if (isGoingUp) commands = [ '--beacon-up' ];
+    else           commands = [ '--beacon-down' ];
+    childD = child_process.spawn('klyng', commands);
+  } else {
+    commands = [ '-p', 'Minions', 'ssh', userAtHostname, beaconCommand];
+    childD = child_process.spawn('sshpass', commands);
+  }
+  childD.stdin.setEncoding('ascii');
+  childD.stderr.setEncoding('ascii');
+
+  childD.stdout.on('data', function(data) {
+    console.log('klyng output: ' + data);
+  });
+
+  childD.stdout.on('close', function(code) {
+    console.log('klyng return: ' + code);
+    if (code == 0) {
+      callback(null, 1);
+    } else {
+      callback(null, 0);
+    }
+  });
+  // End of beaconFor()
+}
+
+minions.beacon = function(isGoingUp, callback) {
+  var minionCount = 0;
+  if (typeof callback !== 'function') {
+    callback = function() {};
+  }
+
+  minions.beaconFor('bob', isGoingUp, function(errBob, count) {
+    minionCount += count;
+
+    minions.beaconFor('kevin', isGoingUp, function(errKevin, count) {
+      minionCount += count;
+
+      minions.beaconFor('dave', isGoingUp, function(errDave, count) {
+        minionCount += count;
+
+        minions.beaconFor('gru', isGoingUp, function(errGru, count) {
+          callback(null, minionCount);
+        });
+      });
+    });
+  });
+  // End of beacon()
+}
+
+//-----------------------------------------------
+// bedtime
+//-----------------------------------------------
 
 exports.bedtimeFor = function(minion, callback) {
   if (typeof callback !== 'function') {
