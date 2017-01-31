@@ -38,7 +38,7 @@ Hover over interesting-looking things in the lab until you've found where the co
 The website you see was quickly put together with the [Express Generator](https://www.npmjs.com/package/express-generator), npm, Node.js and a screenshot from the movie's early art design blog and a Google Font which is close enough to the movie poster original.  The remaining work will be done in JavaScript mostly.
 
 ## Sound events
-I've now added themed sound events for some activities and the shutdown page. Just remember that the audio is server-based and played on `gru` node.
+I've now added themed sound events for some activities and the shutdown page. Just remember that the audio is server-based and played on the `gru` node.
 
 ## Shutting down
 And I've added a minion-shutdown routine which seems to work great.

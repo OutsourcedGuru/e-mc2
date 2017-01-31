@@ -22,6 +22,8 @@ The github repository will hold the differences required for each computer so th
 
 You may find it simpler to purchase *a single* pre-installed NOOBS micro-SD card directly, saving a step during the setup.
 
+Note that the bulk of the code you'll be working with from a supercomputer processing standpoint is **JavaScript**.
+
 ## Computer Names
 Here is a partial list of the first four computers in your system.  The first listed below is considered to be the **villian** (normally referred to as the "master") and the remainder are the **minions** (normally referred to as the "slaves").
 
