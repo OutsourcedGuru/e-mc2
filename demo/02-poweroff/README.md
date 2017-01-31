@@ -25,5 +25,8 @@ $ sshpass -p 'Minions' ssh pi@bob 'sudo poweroff'
 
 (I tried using an inline `bash` script `for` command but that didn't seem to work out.)
 
+## Website support
+I recently added support to shutdown the minions via the website, for what it's worth. It's still good to know how to do it manually, however.
+
 ## Next step, audio
 Next, continue with the **gru/audio/README.md** step-by-step instructions from here.

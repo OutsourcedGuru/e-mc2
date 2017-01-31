@@ -2,7 +2,7 @@
 Here, we're installing a website on `gru` which ought to allow us to do a variety of tasks like determining minion status, for example.
 
 ## Prerequisites
-You should have setup `dave` and `gru` by now, following the step-by-step instructions in **minions/01-dave/README.md** and **gru/README.md**, respectively.  And they should be assembled in the system, cabled to Ethernet and powered up.  Also, you should have gone through **demo/01-hello/README.md**, **demo/02-poweroff/README.md** and **gru/audio/README.md** before continuing here.
+You should have setup `dave` and `gru` by now, following the step-by-step instructions in **minions/01-dave/README.md** and **gru/README.md**, respectively.  And they should be assembled in the system, cabled internally to Ethernet and powered up.  Also, you should have gone through **demo/01-hello/README.md**, **demo/02-poweroff/README.md** and **gru/audio/README.md** before continuing here.
 
 ## Installation
 The `git clone` is made interesting below since we're only interested in a single subfolder in the repository.
@@ -32,22 +32,25 @@ Regardless, you should see something like the following.
 
 It's subtle but there are actually some logistics being returned here since the server had to run three PING commands in order to determine how many minions are available.
 
+Hover over interesting-looking things in the lab until you've found where the commands are hidden.
+
 ## About the Website
 The website you see was quickly put together with the [Express Generator](https://www.npmjs.com/package/express-generator), npm, Node.js and a screenshot from the movie's early art design blog and a Google Font which is close enough to the movie poster original.  The remaining work will be done in JavaScript mostly.
 
 ## Sound events
-I've now added themed sound events for the home page and the shutdown page.
+I've now added themed sound events for some activities and the shutdown page. Just remember that the audio is server-based and played on `gru` node.
 
 ## Shutting down
 And I've added a minion-shutdown routine which seems to work great.
 
 ![bedtime](https://cloud.githubusercontent.com/assets/15971213/21960513/0a28f570-daa4-11e6-8371-a58de738223b.png)
 
+## Assembling and dispersing the minions
+I've added the code to remotely turn on the `klyng` beacon and off again via the web interface, making things a lot easier.
+
 ## A work-in-progress
 At the moment, I'm still "mapping out" the client-side `imagemap`, in html terms so there's not much going on yet.
 
 ### Next steps
-1. I need to decide where on the background map to put various activities
-2. I need to continue to "map out" the index page's `imagemap`
-3. I need to start working on the REST API for controlling minions, for example
-4. It would be great to be able to start the `klyng` beacons on `gru` and the minions from this interface as well as turn them off again
+1. I need to continue to "map out" the index page's `imagemap` for places to put new actions
+2. I need to start working on the REST API for controlling minions, for example
