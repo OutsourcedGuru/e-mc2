@@ -78,3 +78,8 @@ I should be working with [Fab Lab](http://www.fablabsd.org/tools/) in San Diego 
 I'm writing the documentation as I build my own system.  This allows me to precisely remember what I typed in, the ordering of steps and the problems I've overcome in doing so.
 
 I just removed NFS file sharing support since it simply didn't work.  This has been replaced by SMB (via Samba) and so far it's working as expected.  Additionally, I re-designed the power adapter for the system since the earlier version was too fussy, to be honest.
+
+|Donate||Cryptocurrency|
+|:-----:|---|:--------:|
+| ![eth-receive](https://user-images.githubusercontent.com/15971213/40564950-932d4d10-601f-11e8-90f0-459f8b32f01c.png) || ![btc-receive](https://user-images.githubusercontent.com/15971213/40564971-a2826002-601f-11e8-8d5e-eeb35ab53300.png) |
+|Ethereum||Bitcoin|
